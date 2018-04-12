@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
 import Flight from './components/Flight';
 
@@ -21,10 +20,9 @@ class App extends Component {
     			})
     		});
 	}
-
 	render() {
 		return (
-		     <div className="App">
+		     <div className="App"> {/*AppCss*/}
 		        	{this.state.destinations.map((destination)=>{
 		        		return <Flight key={destination.flightNumber} {...destination} />
 		        	})
